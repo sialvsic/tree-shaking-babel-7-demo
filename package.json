@@ -1,0 +1,28 @@
+{
+  "name": "tree-shaking-babel-7-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build-step": "webpack --display-used-exports --display-modules --config ./src/Step/webpack.config.js",
+    "build-step-babel": "webpack --display-used-exports --display-modules --config ./src/Step/webpack.config.babel.js",
+    "build-step-babel-loose": "webpack --display-used-exports --display-modules --config ./src/Step/webpack.config.babel.loose.js",
+    "babel": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sialvsic/tree-shaking-babel-7-demo.git"
+  },
+  "author": "sialvsic",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "webpack": "4.19.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "3.1.0",
+    "webpack-deep-scope-plugin": "1.6.0",
+    "babel-loader": "8.0.2"
+  }
+}
