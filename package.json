@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build-step": "webpack --display-used-exports --display-modules --config ./src/Step/webpack.config.js",
+    "build-step-file": "webpack --display-used-exports --display-modules --config ./src/Step/webpack.config.file.js",
     "build-step-babel": "webpack --display-used-exports --display-modules --config ./src/Step/webpack.config.babel.js",
     "build-step-babel-loose": "webpack --display-used-exports --display-modules --config ./src/Step/webpack.config.babel.loose.js",
     "babel": "babel src -d lib"
@@ -19,10 +20,13 @@
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
+    "babel-loader": "8.0.2",
     "webpack": "4.19.0",
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-cli": "3.1.0",
-    "webpack-deep-scope-plugin": "1.6.0",
-    "babel-loader": "8.0.2"
+    "webpack-deep-scope-plugin": "^1.6.0"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.11"
   }
 }
