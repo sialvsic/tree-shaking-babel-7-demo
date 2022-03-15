@@ -27,6 +27,6 @@
     "webpack-deep-scope-plugin": "^1.6.0"
   },
   "dependencies": {
-    "lodash-es": "^4.17.11"
+    "lodash-es": "^4.17.21"
   }
 }
